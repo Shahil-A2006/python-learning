@@ -284,3 +284,5 @@ c=input("HRA")
 d=input("DA")
 Total =int(b+c+d)
 print(f'{a}\n {b}\n {c}\n {d} ')
+
+ 
