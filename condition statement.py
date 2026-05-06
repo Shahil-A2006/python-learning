@@ -83,12 +83,32 @@
 
     
 #Ternary operator
-age=18
+# age=18
 
-result="you are eligible" if age>=18 else "you are not eligible"     #you are eligible
-print(result)
+# result="you are eligible" if age>=18 else "you are not eligible"     #you are eligible
+# print(result)
 
-print("you are eligible" if age>=18 else "you are not eligible")     #you are eligible
+# print("you are eligible" if age>=18 else "you are not eligible")     #you are eligible
 
-print("even" if 10%2==0 else "odd")   #even
+# print("even" if 10%2==0 else "odd")   #even
 
+
+# m=int(input("Enter your mark: "))
+
+# if m>=90:
+#     print("A grade")
+# elif m>=80:
+#     print("B grade")
+# elif m>=70:
+#     print("C grade")
+# else:
+#     print("Failed")
+
+
+name="shahil"
+job="devoloper"
+age=19
+
+print(name,job,age)
+print("iam",name,"iam working as a" ,job," i have",age,"years old")
+print(f"iam{name}iam working as a{job}i have {age}years old")

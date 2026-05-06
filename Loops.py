@@ -78,9 +78,10 @@
 
 #   		Statement(s)
 # Example:i = 0
-# 		while i < 5:
-#     			print(i)
-#     			i += 1
+# i=0
+# while i<5 :
+#     print(i)
+#     i += 1
 
  
 # i=1
@@ -196,23 +197,23 @@
 """Reverse a string     eg:  (name-abc = cba)"""
 
 
-name ="shahil"
+# name ="shahil"
 
-reverse=""
+# reverse=""
 
-for i in name:
-    reverse = i + reverse
-print(reverse)      #lihahs
+# for i in name:
+#     reverse = i + reverse
+# print(reverse)      #lihahs
 
 
 """Reverse a integer number   eg:  (num-123 =321) """
 
-num=1234
+# num=1234
 
-reverse=""
+# reverse=""
 
-num=str(num)    
+# num=str(num)    
 
-for i in num:
-    reverse = i + reverse
-print(reverse)     #4321
+# for i in num:
+#     reverse = i + reverse
+# print(reverse)     #4321

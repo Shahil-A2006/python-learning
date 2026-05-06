@@ -44,7 +44,7 @@ b="xxxx"
 
 #searching function
 
-# a="python programming"
+a="python programming"
 # print(a.find("n"))  #first match index position
 # print(a.index("y")) #first match index position if not found shows error
 # print(a.rfind("m"))  #search from right side catch first matches from right
@@ -105,9 +105,59 @@ b="xxxx"
 
 #encoding
 
-a="hello"
-print(a.encode())  #b'hello'
+# a="hello"
+# print(a.encode())  #b'hello'
+
+
+#format string  - to join contents
+
+# a="shahil"
+# print(f"My Name is {a}")
+
+
+
+#escape sequance   (\n , \t , \b , \)
+
+# print("hello \nworld") # \n-new line
+# print("hello\tworld")  # \t-tabspace
+# print("hello \bworld") # \b-backspace
+
+# print("\"india\" is my country")  # \ -ignore in codes but run by that what we enter 
+
+
+#length -to get the length of the string
+
+a="python"
+# print(len(a))  #6
+# print(len("pyhton"))  #6
+
+
+#looping
+
+# a="python programming"
+# for i in a:
+#     print(i,end=" ")
+
+
+#string membership operator    (in , is)  - check is it there in that string
+# a="python programming"
+# print("py" in a)  #true   
+
+# """vowel checking"""
+# a="python programming"
+# for i in a:
+#     if i in 'aeiouAEIOU': 
+#         print(i)
 
 
 
 
+
+
+
+
+
+a="shahil"
+for i in a:
+    if i in "aeiou":
+        print(i)
