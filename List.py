@@ -53,26 +53,26 @@ lst2=[100,200,300,"python"]
 # print(lst1)   #[10, 20, 'shahil,True', 50, [100, 200, 300, 'python']]
 
 """here extend the two different list into one list as proper using extend"""
-lst1.extend(lst2)
-print(lst1)   #[10, 20, 'shahil,True', 50, 100, 200, 300, 'python']
+# lst1.extend(lst2)
+# print(lst1)   #[10, 20, 'shahil,True', 50, 100, 200, 300, 'python']
 
 
 """insert - is used to add any value to a index position ehat we did   ,eg:"""
-lst1.insert(1,"shahil")
-print(lst1)   #[10, 'shahil', 20, 'shahil,True', 50, 100, 200, 300, 'python']
+# lst1.insert(1,"shahil")
+# print(lst1)   #[10, 'shahil', 20, 'shahil,True', 50, 100, 200, 300, 'python']
 
 
 
 """remove -is used to remove a value in list by using that value"""
-lst=[100,200,300,400,500,"python","shahil"]
-lst.remove(200)
-print(lst)
+# lst=[100,200,300,400,500,"python","shahil"]
+# lst.remove(200)
+# print(lst)
 
 """pop - it is also used to remove the value in list but one diif is here remove  the index numbered value we put index number to remove"""
 """if only put pop the last value will remove"""
-print(lst.pop())  #shahil  -the value of poped
-print(lst.pop(2))  #400     -the value of poped
-print(lst)    #[100, 300, 500, 'python']   -here the out with poped means removed after list bcoz we print as seperate list 
+# print(lst.pop())  #shahil  -the value of poped
+# print(lst.pop(2))  #400     -the value of poped
+# print(lst)    #[100, 300, 500, 'python']   -here the out with poped means removed after list bcoz we print as seperate list 
 
 
 """clear-used the clear all values in a list and becomes into a empty list"""
@@ -83,15 +83,15 @@ print(lst)    #[100, 300, 500, 'python']   -here the out with poped means remove
 
 """index()-used to get the index position of the value"""
 lst = ["shahil","shanoon",100,"fathima beevi", 500,"ashraf"]
-print(lst.index("shanoon"))  #1
-print(lst.index("ashraf"))    #5
+# print(lst.index("shanoon"))  #1
+# print(lst.index("ashraf"))    #5
 # print(lst.index("python"))    #error will happen bcoz this value is no in that list
 
 
 
 """count the value is how many times are there in the list"""
-lst = ["shahil","shanoon",500,100,"fathima beevi", 500,"python","mac",500]
-print(lst.count(500)) #3 - 500 is 3 times in the list
+# lst = ["shahil","shanoon",500,100,"fathima beevi", 500,"python","mac",500]
+# print(lst.count(500)) #3 - 500 is 3 times in the list
 
 
 
@@ -101,45 +101,45 @@ print(lst.count(500)) #3 - 500 is 3 times in the list
 """if we want to order as descending order do sort(reverse=True)"""
 
 lst1=[200,30,1000,10,15,5,45]
-lst2=["z","c","b","a","x"]
+# lst2=["z","c","b","a","x"]
 
-lst1.sort()
-print(lst1)  #[5, 10, 15, 30, 45, 200, 1000] -order as ascending
+# lst1.sort()
+# print(lst1)  #[5, 10, 15, 30, 45, 200, 1000] -order as ascending
 
-lst2.sort()
-print(lst2)  #['a', 'b', 'c', 'x', 'z'] -order as ascending
+# lst2.sort()
+# print(lst2)  #['a', 'b', 'c', 'x', 'z'] -order as ascending
 
 """here i am reversing it do descending by reverse=True"""
-lst1.sort(reverse=True)   #[1000, 200, 45, 30, 15, 10, 5]   - order as descenfing
-print(lst1)
+# lst1.sort(reverse=True)   #[1000, 200, 45, 30, 15, 10, 5]   - order as descenfing
+# print(lst1)
 
-lst2.sort(reverse=True)   #['z', 'x', 'c', 'b', 'a']  - order as descenfing
-print(lst2)
+# lst2.sort(reverse=True)   #['z', 'x', 'c', 'b', 'a']  - order as descenfing
+# print(lst2)
 
 
 
 
 """reverse - is used to reverse the entire list """
-lst=["quest",20,"python","shahil",50]
-lst.reverse()
-print(lst)    #[50, 'shahil', 'python', 20, 'quest']
+# lst=["quest",20,"python","shahil",50]
+# lst.reverse()
+# print(lst)    #[50, 'shahil', 'python', 20, 'quest']
 
 
 
 
 """copy -used to same purpose of copy the same copied list is print in output"""
-list10=lst.copy()
-print(list10)
+# list10=lst.copy()
+# print(list10)
 
 
 
 """here functions applicable to that function named purpose ,eg:sum-use to sum"""
 
-li=[10,20,30,100,500,200]
-print(len(li))       #6  -length of list
-print(sum(li))       #860 -sum of list
-print(min(li))        #10 -min value of list
-print(max(li))        #500 -max value of list
+# li=[10,20,30,100,500,200]
+# print(len(li))       #6  -length of list
+# print(sum(li))       #860 -sum of list
+# print(min(li))        #10 -min value of list
+# print(max(li))        #500 -max value of list
 
 
 
@@ -200,4 +200,11 @@ list=[10,20,30,"python","shahil",200,"quest"]
 #     a= input(f"enter {i+1} value: ")
 #     lst.append(a)
 # print(lst)
+
+
+
+
+
+
+
   

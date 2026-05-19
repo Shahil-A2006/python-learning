@@ -174,4 +174,203 @@ def welcome():
 # a,b,c,d = demo()
 # print(a) #red
 # print(c) #blue
+
+
+# def calc(a,b):
+#     return a+b,a-b
+
+# print(calc(10,6))   #(16, 4)
+
+# a,b=calc(10,10)
+# print(a)     #20
+# print(b)     #0
+
+
+"""here argument assign with the variable ,store number on variable in the fn """
+
+# def calc(a,b):
+#     return a+b
+
+# a=50
+# b=50
+# print(calc(a,b))   #100   - here i code variable name in argument here take the value in the argument
+
+
+"""here i same with take input from use in the variable and that variable store in argument"""
+
+# def cal(a,b):
+#     return a+b
+
+# a=int(input("enter a  umber: "))
+# b=int(input("enter another number: "))            #here before input i define integer by int bcoz there is + operator in the return
+# print(cal(a,b))
+
+
+
+"""here do with add,sub,mult,div """
+
+# def add(a,b):
+#     return f"sum: {a+b}"
+
+# def sub(a,b):
+#     return f"difference: {a-b}"
+
+# def mul(a,b):
+#     return f"product: {a*b}"
+
+# def div(a,b):
+#     if b!=0:
+#         return f"division: {a/b}"
+#     else:
+#         return "divisor not be zero"
+    
+
+# a=int(input("enter a number: "))
+# b=int(input("enter another number: "))
+
+# print(add(a,b))
+# print(sub(a,b))
+# print(mul(a,b))
+# print(div(a,b))
+
+
+
+"""calculations"""
+
+# def ad(a,b,c):
+    
+#     if b=='+':
+#         return f'addition result {a+c}'
+#     if b=='-':
+#         return f'substraction result {a-c}'
+#     if b=='*':
+#         return f'multiplication result {a*c}'
+#     if b=='/':
+#         return f'division result {a/c}'
+#     else:
+#         pass
+# a=int(input('enter first number: '))
+# b=input('enter opeartion: ')
+# c=int(input('enter second number: '))   
+# print(ad(a,b,c))
+
+
+
+
+"""
+
+arbitrary variable (* before the variable)
+keyword arbitrary varibale (** before the variable)
+                                                        """
+
+
+
+"""RECURSIVE FUNCTION"""
+
+# A recursive function is a function that calls itself to solve a problem.
+
+#Every recursive function has 2 main parts
+#     1.base case:
+# condition where the function stop calling itself
+#       2.Recursive case:
+#   the function calls itself witha smaller/simpler input  
+
+#eg:
+
+#factorial of a number
+
+# def factorial(n):
+#     if n == 1:
+#         return 1
+#     else:
+#         return n * factorial(n-1)
+    
+# print(factorial(5))
+
+
+
+
+
+"""ANNONIMUS FUNCTION"""
+
+#  An Annonimus function is a function without a name 
         
+#  In python ,we create annonymous function using the keyword lambda,
+#  so they are also called lambda function 
+
+#  it is a one-line function
+#  it can have any number of inputs,but only one expression
+#  The Expression is Evaluated and returned when the function is called
+
+#syntax :
+# variable_name = lambda arguments : expression 
+# print(variable_name())
+
+#eg:
+
+# result=lambda a,b:a+b
+# print(result(2,3))
+
+
+
+
+"""MAP FUNCTION"""
+
+# A Map function in python applies a given function to all items in an iterable and return a map object(which is an iterator)
+# map(function,iterable)
+# Map function is used to apply an expression into a whole type like list,tuple,dict ets  ,its effect all of the values in that type
+
+#eg:
+# list1=[1,2,3,4,5]
+# result=list(map(lambda a:a**2,list1))
+# print(result)
+
+
+"""FILTER FUNCTION"""
+
+# Filter() function is used on the type like list,dict,tuple etc like that its used to filter the values of the condition aptable
+# simple , filter the values means get the values of the condtion true only get the value
+
+# syntax
+# filter(function,iterable)
+
+#eg:
+# list1=[1,2,3,4,5,6,7,8,9,10]
+# result=list(filter(lambda c:c%2 == 0,list1))
+# print(result)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# a=10000
+
+# def ty():
+#     a=100
+#     # tu=tuple(a)
+#     print(a)
+#     a+=50
+#     print(a)
+# ty()
+
+# print(a)
