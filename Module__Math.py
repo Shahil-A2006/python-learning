@@ -1,4 +1,6 @@
 """MODULE"""
+"""This is buid in module"""
+
 
 # collection of .py files is called module
 # "import" is used to connect with two files.
@@ -9,6 +11,7 @@
 
 
 """MATH"""
+"""This is buid in module"""
 
 
 import math                 #to connect as math we doing math

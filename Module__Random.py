@@ -1,6 +1,10 @@
 """MODULE"""
 
+
+
 """ RANDOM"""
+"""This is buid in module"""
+
 
 import random                   ##to connect as random we doing random values
 
