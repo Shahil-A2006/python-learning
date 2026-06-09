@@ -1,4 +1,4 @@
-"""      OOPs - object oriented programming          """
+"""       OOPs - object oriented programming          """
 
 
 #   OOPs is the one of the most widely used programming paradigm (paradigm is the different ways for solution).
@@ -303,28 +303,28 @@
 # ob.par()
 
 """multi level inheritance with constructor in all class"""
-# class Parent:                           #parent class
-#     def __init__(self):                 #parent constructor
-#         print('parent constructor')
-#     def par(self):
-#         print('parent class method')
-# class Child(Parent):                    #child class
-#     def __init__(self):                     #child constructor
-#         print('child constructor')
-#     def chi(self):
-#         print('child class method')
-# class Grand_child(Child):               #grand child class
-#     def __init__(self):                     #grand child constructor 
-#         print('grand child constructor')
-#         super().__init__()                  #calling parent class method
-#         Parent.__init__(self)               #calling grand parent method (also can call with super() in parent class)
-#     def grachi(self):
-#         print('grand child class method')
+class Parent:                           #parent class
+    def __init__(self):                 #parent constructor
+        print('parent constructor')
+    def par(self):
+        print('parent class method')
+class Child(Parent):                    #child class
+    def __init__(self):                     #child constructor
+        print('child constructor')
+    def chi(self):
+        print('child class method')
+class Grand_child(Child):               #grand child class
+    def __init__(self):                     #grand child constructor 
+        print('grand child constructor')
+        super().__init__()                  #calling parent class method
+        Parent.__init__(self)               #calling grand parent method (also can call with super() in parent class)
+    def grachi(self):
+        print('grand child class method')
 
-# x=Grand_child()
-# x.grachi()
-# x.chi()
-# x.par()
+x=Grand_child()
+x.grachi()
+x.chi()
+x.par()
 
 
 """hierarchical inheritance"""
@@ -354,30 +354,31 @@
 
 
 """hierarchical inheritance with constructor in all class"""
-# class Parent:               #parent class
-#     def __init__(self):         #parent constructor
-#         print('parent constructor')
-#     def par_method(self):
-#         print('parent method')
 
-# class Son(Parent):              #first child class
-#     def __init__(self):         #first child constructor
-#         print('son constructor')
-#     def son_method(self):
-#         print('son method')
-# class Daughter(Parent):         #second child class
-#     def __init__(self):             #second child constructor
-#         print('daughter constructor')
-#     def dau_method(self):
-#         print('daughter method')
+class Parent:               #parent class
+    def __init__(self):         #parent constructor
+        print('parent constructor')
+    def par_method(self):
+        print('parent method')
 
-# x1=Son()
-# x1.son_method()
-# x1.par_method()
+class Son(Parent):              #first child class
+    def __init__(self):         #first child constructor
+        print('son constructor')
+    def son_method(self):
+        print('son method')
+class Daughter(Parent):         #second child class
+    def __init__(self):             #second child constructor
+        print('daughter constructor')
+    def dau_method(self):
+        print('daughter method')
 
-# x2=Daughter()
-# x2.dau_method()
-# x2.par_method()
+x1=Son()
+x1.son_method()
+x1.par_method()
+
+x2=Daughter()
+x2.dau_method()
+x2.par_method()
 
 
 """Hybrid Inheritance"""
@@ -388,7 +389,7 @@
 # class School:
 #     def school_meth(self):
 #         print('school method')
-# class Teacher1(School):
+# class Teacher1(School):r
 #     def t1_meth(self):
 #         print('teacher-1 method')
 # class Teacher2(School):
@@ -400,12 +401,12 @@
 # class Student2(Teacher1):
 #     def stu2_meth(self):
 #         print('student-2 method')
-# """
-# school-techer1 / school-teacher2/ teacher1-student2  => single inheritance
-# teacher1 & teacher2- student1 => multiple inheritance
-# school- teacher1- student2 => multilevel inheritance
-# school-techer1 & teacher2 => hierarchical inheritnace
-
+"""
+school-techer1 / school-teacher2/ teacher1-student2  => single inheritance
+teacher1 & teacher2- student1 => multiple inheritance
+school- teacher1- student2 => multilevel inheritance
+school-techer1 & teacher2 => hierarchical inheritnace
+"""
 
 
 
@@ -446,7 +447,47 @@
 # y.stop()
 
 
-"""ENCAPSULATION"""
+
+
+"""polymorphisum"""
+# class parent:
+#     def a(self):
+#         print('hi')
+# class Child(parent):
+#     def a(self):
+#         print('hello')
+
+# x=parent()
+# x.a()                 #calls parent method
+# y=Child()
+# y.a()                 #calls child method (both a() gives different output)
+
+
+"""method-overriding"""
+# class parent:
+#     def a(self):
+#         print('hi')
+# class Child(parent):
+#     def a(self):
+#         print('hello')
+
+# x=Child()
+# x.a()           #same method name in parent and child class
+
+
+"""method-overloading"""
+# class Person:
+#     def a(self,name,place=None):
+#         print(name,place)
+
+# x=Person()
+# x.a('anu')
+# x.a('anu','calicut')   #to overcome override, need to set default value/None to the parameters.
+
+
+
+
+
 
 
 
