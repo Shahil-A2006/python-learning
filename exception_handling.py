@@ -95,20 +95,20 @@
 """exception handling of raise in using function"""
 #----------------------------------------------------------------------------------------------------------
 
-def division(x,y):
-    if y==0:
-        raise ZeroDivisionError("divisor can't be zero")
-    else:
-        return x/y
+# def division(x,y):
+#     if y==0:
+#         raise ZeroDivisionError("divisor can't be zero")
+#     else:
+#         return x/y
     
-try:
-    # print(division(10,2))
-    print(division(20,0))
+# try:
+#     # print(division(10,2))
+#     print(division(20,0))
 
-except ZeroDivisionError as a:
-    print("error occured:",a)
+# except ZeroDivisionError as a:
+#     print("error occured:",a)
 
-print("+++++++++++++++++++++")                          #just to know nothing happen to normal flow
+# print("+++++++++++++++++++++")                          #just to know nothing happen to normal flow
 
 
 
@@ -117,18 +117,91 @@ print("+++++++++++++++++++++")                          #just to know nothing ha
 #----------------------------------------------------------------------------------------------------------
 
 
-class Myerror(Exception):
-    pass
+# class Myerror(Exception):
+#     pass
 
-try:
-    x=500
-    if x<10:
-        raise Myerror("value is too small")
+# try:
+#     x=500
+#     if x<10:
+#         raise Myerror("value is too small")
     
-except Myerror as a:
-    print("An exception occured",a)
+# except Myerror as a:
+#     print("An exception occured",a)
 
-else:
-    print("too small")
+# else:
+#     print("too small")
 
-print("welcome")
+# print("welcome")
+
+
+
+
+
+"""ASSERTION"""
+
+# An assertion is a statement used to check whether a condition is True or False while a program is running.
+
+# If the condition is True, the program continues normally.
+# If the condition is False, Python raises an AssertionError.
+
+#----------------------------------------------------------------------------------------------------------
+
+
+"""
+          Syntax:     assert condition
+                           or
+                            assert condition, "Error message"
+
+                                                                          """
+#----------------------------------------------------------------------------------------------------------
+
+
+#How it works internally
+#                assert x > 0, "Value must be positive“
+
+#  Assertions are mainly used for debugging and checking assumptions in code.
+
+#----------------------------------------------------------------------------------------------------------
+#----------------------------------------------------------------------------------------------------------
+
+
+#eg:
+
+# x=10
+# assert x >100
+# print("program continues")     # here condition  is false thats why error display(assertion error)  ,otherwise display print content
+
+#-------------------------------------------------------------------------------------------------------------------
+
+
+#with custom message
+#------------------
+
+# age=-4
+# assert age >=0, "age cannot be negative"
+# print(age)
+
+
+#-------------------------------------------------------------------------------------------------------------------
+
+# def divide(a,b):
+#     assert b != 0,"b cannot be zero"
+#     return a / b
+# print(divide(10,0))
+
+#-------------------------------------------------------------------------------------------------------------------
+
+
+# x=int(input("enter an age: "))
+# try:
+#     assert x > 0, "x must be positive"
+
+# except AssertionError as e:
+#     print(e)
+
+# print("+++++++++++++++")
+
+#-------------------------------------------------------------------------------------------------------------------
+
+
+

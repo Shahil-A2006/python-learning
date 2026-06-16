@@ -125,3 +125,24 @@
 
 """ # 4. Email Validation
 # Accept an email address.If it does not contain "@", raise a ValueError. """
+
+
+# ======================================================================================
+# Assertion
+# ======================================================================================
+
+# 1. Positive Number Check
+# 2. Even Number Check
+# 3. Age Validation
+# 4. Password Length Check
+# 5. Division Program :What exception message is displayed if b = 0?
+# 6. String Validation
+# 7.  Marks Validation :Mark between 0 and 100
+# 8.  List Length Check
+# 9.  Write a program using assert to check whether a number is divisible by 5.
+# 10. Write a program using assert to ensure a username is not empty.
+# 11. Write a program using assert to check whether a list contains at least 3 elements.
+# 12. Write a program using assert to verify that a person's age is between 1 and 120.
+# 13. Write a program using assert to make sure a string contains only lowercase letters. cm cmnk 
+
+
