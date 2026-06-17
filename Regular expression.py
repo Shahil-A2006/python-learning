@@ -189,3 +189,14 @@
 # t="67 abc 451617hha 2342455 90 abc"
 # x=re.findall("[0-5][0-9]",t)                # get the value btw what we set the range , here it is 00 to 59
 # print(x)                                 # ['45', '16', '17', '23', '42', '45']
+
+#--------------------------------------------------------------------
+
+"""replace all whitespace with * """
+
+# import re
+# a="i am shahil i am a student"
+# x=re.sub("\s","*",a)          # here replace * on white space to do that /s , if we want to change another anything put that on yhe place \s
+# print(x)                      # i*am*shahil*i*am*a*student
+
+#--------------------------------------------------------------------
